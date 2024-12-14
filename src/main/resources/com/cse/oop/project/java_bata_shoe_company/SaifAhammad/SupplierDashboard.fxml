@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.SaifAhammad.SupplierDashboardController">
+   <Label fx:id="SupplierDashboard" alignment="TOP_CENTER" layoutX="5.0" layoutY="14.0" prefHeight="17.0" prefWidth="771.0" style="-fx-background-color: #7ff0ec;" text="Supplier Dashboard">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="SupplierButton" layoutX="708.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowSupplierOnButtonClick" text="Supplier" />
+   <Button fx:id="SignOutButton" layoutX="708.0" layoutY="90.0" mnemonicParsing="false" onAction="#SignOutOnButtonClick" text="SignOut" />
+   <Button fx:id="DeliveryButton" layoutX="620.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowDeliveryOnButtonClick" text="Delivery" />
+   <Button fx:id="ShipmentButton" layoutX="529.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowShipmentOnButtonClick" text="Shipment" />
+   <Button fx:id="WarehouseButton" layoutX="427.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowWarehouseOnButtonClick" text="Warehouse" />
+   <Button fx:id="TransportationTeamButton" layoutX="276.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowTransportationTeamOnButtonClick" text="Transportation Team" />
+   <Button fx:id="SubmitInvoicesButton" layoutX="149.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowSubmitInvoicesOnButtonClick" text="Submit Invoices" />
+   <Button fx:id="PurchaseOrdersButton" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowPurchaseOrdersOnButtonClick" text="Purchase Orders" />
+   <Button fx:id="Performancemetricsbutton" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#ShowPerformanceMetricsOnButtonClick" text="Performance Metrics" />
+</AnchorPane>
