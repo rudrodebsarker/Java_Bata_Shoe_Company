@@ -6,4 +6,5 @@ module com.cse.oop.project.java_bata_shoe_company {
     opens com.cse.oop.project.java_bata_shoe_company to javafx.fxml;
     exports com.cse.oop.project.java_bata_shoe_company.SaifAhammad;
     opens com.cse.oop.project.java_bata_shoe_company.SaifAhammad to javafx.fxml;
+    exports com.cse.oop.project.java_bata_shoe_company;
 }
