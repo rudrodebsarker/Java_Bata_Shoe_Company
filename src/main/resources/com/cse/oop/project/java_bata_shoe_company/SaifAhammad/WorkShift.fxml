@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="WelcomeNote" prefHeight="598.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.SaifAhammad.WorkShiftController">
+    <Button fx:id="SignOutButton" layoutX="742.0" layoutY="69.0" mnemonicParsing="false" onAction="#SignOutOnButtonClick" text="Sign out" />
+    <Label alignment="TOP_CENTER" layoutX="17.0" layoutY="14.0" prefHeight="17.0" prefWidth="786.0" style="-fx-background-color: #7ff0ec;" text="Employee Dashboard">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <SplitMenuButton fx:id="ApplicationCenterMenu" layoutX="288.0" layoutY="69.0" mnemonicParsing="false" onAction="#ShowApplicationMenuOnClick" text="Application Center">
+        <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+    </SplitMenuButton>
+    <Button fx:id="PayrollButton" layoutX="462.0" layoutY="69.0" mnemonicParsing="false" onAction="#ShowPayrollOnButtonClick" text="Payroll" />
+    <Button fx:id="UserCenterButton" layoutX="644.0" layoutY="69.0" mnemonicParsing="false" onAction="#ShowUserCenterOnButtonClick" text="User Center" />
+    <Button fx:id="AnnouncementsButton" layoutX="154.0" layoutY="69.0" mnemonicParsing="false" onAction="#ShowAnnouncementsOnButtonClick" text="Announcements" />
+    <Button fx:id="ExpenseClaimButton" layoutX="28.0" layoutY="69.0" mnemonicParsing="false" onAction="#ShowExpenseClaimPageOnButtonClick" text="Expense Claims" />
+   <BorderPane layoutX="30.0" layoutY="299.0" prefHeight="265.0" prefWidth="757.0">
+      <center>
+         <TableView fx:id="WorkShiftTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <columns>
+             <TableColumn fx:id="Column1" prefWidth="150.0" text="Employee Name" />
+             <TableColumn fx:id="Column2" prefWidth="150.0" text="Employee ID" />
+           </columns>
+         </TableView>
+      </center>
+   </BorderPane>
+   <VBox layoutX="297.0" layoutY="194.0" prefHeight="105.0" prefWidth="225.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID:" />
+         <TextField fx:id="EmployeeID" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a Date:" />
+         <DatePicker fx:id="DatePicker" />
+      </children>
+   </VBox>
+</AnchorPane>
