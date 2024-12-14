@@ -24,9 +24,9 @@ public class PayrollInfoController {
     private TableView<PayrollInfo> PayrollInfoTable;
 
     @FXML
-    private TableColumn Column1;
+    private TableColumn<PayrollInfo, String> Column1;
     @FXML
-    private TableColumn Column2;
+    private TableColumn<PayrollInfo, String> Column2;
 
     @FXML
     private Button SignOutButton;
