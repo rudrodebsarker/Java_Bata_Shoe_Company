@@ -119,14 +119,14 @@ public class MonitorSalesController {
     @FXML
     void summarizeSalesButtonOnMouseClick(ActionEvent event) {
         try {
-            // Ensure the date is selected
+
             LocalDate selectedDate = dosDatePicker.getValue();
             if (selectedDate == null) {
                 summarizeSalesTextArea.setText("Please select a valid date to summarize sales.");
                 return;
             }
 
-            // Filter sales data for the selected date
+
             ArrayList<MonitorSales> salesForDate = (ArrayList<MonitorSales>) salesDataLists.stream()
                     .filter(sales -> sales.getDateOfSale().equals(selectedDate.toString()))
                     .collect(Collectors.toList());
@@ -136,10 +136,10 @@ public class MonitorSalesController {
                     .map(sales -> Float.parseFloat(sales.getTotalSales()))
                     .reduce(0f, Float::sum);
 
-            // Display the result in the text area
+
             summarizeSalesTextArea.setText("Total Sales for " + selectedDate + ": " + totalSalesSum + " Taka");
 
-            // Compare total sales with the daily target
+
             if (totalSalesSum >= DAILY_TARGET_VALUE) {
                 dailyTargetMetLabel.setVisible(true);
                 dailyTargetNotMetLabel.setVisible(false);
@@ -154,7 +154,7 @@ public class MonitorSalesController {
 
     @FXML
     void exitButtonOnMouseClick(ActionEvent event) {
-        System.exit(0); // Exit the application
+        System.exit(0);
     }
 
     @FXML
@@ -164,14 +164,14 @@ public class MonitorSalesController {
 
     @FXML
     void initialize() {
-        // Initialize the sales data list
+
         salesDataLists = new ArrayList<>();
 
-        // Populate the ComboBoxes
+
         itemNameComboBox.getItems().addAll("Boot", "Slipper", "Sandel");
         nameOfBranchComboBox.getItems().addAll("Store 1", "Store 2", "Store 3", "Store 4");
 
-        // Set default ComboBox values
+
         itemNameComboBox.setValue("Boot");
         nameOfBranchComboBox.setValue("Store 1");
 
