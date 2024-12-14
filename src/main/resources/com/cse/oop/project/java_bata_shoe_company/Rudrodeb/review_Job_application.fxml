@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.ReviewJobApplicationController">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="861.0" style="-fx-background-color: #91CEEB;">
+         <children>
+            <Label layoutX="11.0" layoutY="6.0" prefHeight="20.0" prefWidth="182.0" text="Review Job Application">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="5.0" prefHeight="22.0" prefWidth="22.0" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="837.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/pngegg%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="34.0" prefHeight="378.0" prefWidth="212.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Label layoutX="16.0" layoutY="14.0" prefHeight="26.0" prefWidth="150.0" text="Application ID : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="applicationIDTextField" layoutX="14.0" layoutY="41.0" prefHeight="26.0" prefWidth="175.0" />
+            <Label layoutX="15.0" layoutY="82.0" prefHeight="26.0" prefWidth="150.0" text="Candidate Name :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="candidateNameTextField" layoutX="15.0" layoutY="108.0" prefHeight="26.0" prefWidth="175.0" />
+            <Button layoutX="8.0" layoutY="341.0" mnemonicParsing="false" onAction="#shortlistCandidateOnButtonClick" prefHeight="30.0" prefWidth="90.0" text="Shortlisted ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="295.0" mnemonicParsing="false" onAction="#reviewApplicationOnButtonClick" prefHeight="30.0" prefWidth="194.0" text="Review Application">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="111.0" layoutY="341.0" mnemonicParsing="false" onAction="#rejectCandidateOnButtonClick" prefHeight="30.0" prefWidth="90.0" text="Rejected">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="210.0" layoutY="34.0" prefHeight="378.0" prefWidth="651.0">
+         <columns>
+            <TableColumn fx:id="applicationIDTableColumn" prefWidth="88.79997253417969" text="Application ID" />
+            <TableColumn fx:id="candidateNameTableColumn" prefWidth="121.5999755859375" text="Candidate Name" />
+            <TableColumn fx:id="positionAppliedTableColumn" prefWidth="128.00009155273438" text="Position Applied" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="112.7999267578125" text="Status" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="101.5999755859375" text="Date" />
+            <TableColumn fx:id="attachmentsTableColumn" prefWidth="96.0" text="Attachments" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
