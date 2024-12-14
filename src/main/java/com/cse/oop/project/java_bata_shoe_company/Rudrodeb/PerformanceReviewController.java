@@ -134,4 +134,7 @@ public class PerformanceReviewController
     }
 
 
+    @javafx.fxml.FXML
+    public void switchToHRdashboardOnButtonClick(ActionEvent actionEvent) {
+    }
 }

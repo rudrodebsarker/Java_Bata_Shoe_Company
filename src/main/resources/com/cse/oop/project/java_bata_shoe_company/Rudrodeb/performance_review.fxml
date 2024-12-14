@@ -57,7 +57,7 @@
                   <Font size="13.0" />
                </font>
             </Label>
-            <TextArea fx:id="updateCommantsTextArea" layoutX="9.0" layoutY="89.0" prefHeight="118.0" prefWidth="164.0" />
+            <TextArea fx:id="updateCommantsTextArea" layoutX="9.0" layoutY="89.0" prefHeight="118.0" prefWidth="164.0" wrapText="true" />
             <TextField fx:id="enterDateTextField" layoutX="10.0" layoutY="235.0" prefHeight="26.0" prefWidth="164.0" />
          </children>
       </AnchorPane>
@@ -89,5 +89,6 @@
          </font>
       </Label>
       <TextField fx:id="updateJobRolesTextField111" layoutX="522.0" layoutY="69.0" prefHeight="26.0" prefWidth="326.0" />
+      <Button layoutX="773.0" layoutY="34.0" mnemonicParsing="false" onAction="#switchToHRdashboardOnButtonClick" text="Home" />
    </children>
 </AnchorPane>
