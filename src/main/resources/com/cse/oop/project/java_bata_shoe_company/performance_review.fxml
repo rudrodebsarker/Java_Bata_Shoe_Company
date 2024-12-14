@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.PerformanceReviewController">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="861.0" style="-fx-background-color: #91CEEB;">
+         <children>
+            <Label layoutX="11.0" layoutY="6.0" prefHeight="20.0" prefWidth="182.0" text="Performance Review">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="5.0" prefHeight="22.0" prefWidth="22.0" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="837.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/pngegg%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="34.0" prefHeight="378.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Button layoutX="9.0" layoutY="333.0" mnemonicParsing="false" onAction="#updatePerformanceReviewOnButtonClick" prefHeight="30.0" prefWidth="164.0" text="Update Review">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="295.0" mnemonicParsing="false" onAction="#loadPerformanceReviewOnButtonClick" prefHeight="30.0" prefWidth="164.0" text="Load Review">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="11.0" prefHeight="26.0" prefWidth="150.0" text="Rating : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="updateRatingTextField" layoutX="9.0" layoutY="27.0" prefHeight="26.0" prefWidth="164.0" />
+            <Label layoutX="11.0" layoutY="63.0" prefHeight="26.0" prefWidth="150.0" text="Commants :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="selectDateFromDatePicker" layoutX="9.0" layoutY="236.0" prefHeight="26.0" prefWidth="164.0" />
+            <Label layoutX="11.0" layoutY="209.0" prefHeight="26.0" prefWidth="150.0" text="Select Date :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="updateCommantsTextArea" layoutX="9.0" layoutY="89.0" prefHeight="118.0" prefWidth="164.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="183.0" layoutY="34.0" prefHeight="378.0" prefWidth="678.0">
+         <columns>
+            <TableColumn fx:id="employeeIDTableColumn" prefWidth="88.79997253417969" text="Employee ID" />
+            <TableColumn fx:id="employeeINameTableColumn" prefWidth="100.0" text="Employee Name" />
+            <TableColumn fx:id="jobRolesTableColumn" prefWidth="113.5999755859375" text=" Job Roles" />
+            <TableColumn fx:id="ratingTableColumn" prefWidth="84.80001831054688" text="Rating" />
+            <TableColumn fx:id="commentsTableColumn" prefWidth="174.4000244140625" text="Commants" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="117.59995117187498" text="Date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

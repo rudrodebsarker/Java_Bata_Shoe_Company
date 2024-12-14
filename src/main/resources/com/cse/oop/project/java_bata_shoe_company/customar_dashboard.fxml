@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="465.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.CustomarDashboardController">
    <children>
       <Pane layoutY="-2.0" prefHeight="34.0" prefWidth="808.0" style="-fx-background-color: #91CEEB;">
@@ -45,6 +44,8 @@
                   <Image url="@../../../../../../../../../Downloads/pngegg%20(2).png" />
                </image>
             </ImageView>
+            <Label layoutX="29.0" layoutY="169.0" prefHeight="18.0" prefWidth="54.0" text="User ID:" />
+            <Label fx:id="userIDLabel" layoutX="84.0" layoutY="169.0" prefHeight="18.0" prefWidth="99.0" />
          </children>
       </AnchorPane>
       <Pane layoutX="181.0" layoutY="431.0" prefHeight="33.0" prefWidth="426.0" style="-fx-background-color: #91CEEB;">

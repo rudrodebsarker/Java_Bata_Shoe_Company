@@ -6,39 +6,16 @@ import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-public class CartController
+public class ShippingController
 {
     @javafx.fxml.FXML
-    private TableColumn<ShoeModel, String> moselTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn<ShoeModel, String> priceTableColumn;
-    @javafx.fxml.FXML
-    private Label showTotalAmountLabel;
-    @javafx.fxml.FXML
-    private TableColumn<ShoeModel, String> availabilityTableColumn;
-    @javafx.fxml.FXML
-    private TableView<ShoeModel> tableView;
-    @javafx.fxml.FXML
-    private TableColumn<ShoeModel, String> productCodeTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn<ShoeModel, String> sizeTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn<ShoeModel, String> quentityTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn<ShoeModel, String> brandTableColumn;
-
+    private TextArea showShippingStatusTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
-
-    @javafx.fxml.FXML
-    public void loadAddedItemsOnButtonClick(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
@@ -61,15 +38,7 @@ public class CartController
     }
 
     @javafx.fxml.FXML
-    public void showTotalAmountOnButtonClick(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void confirmOrderOnButtonClick(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void switchToShoeModelOnButtonClick(ActionEvent actionEvent) {
+    public void showShippingStatusOnButtonClick(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

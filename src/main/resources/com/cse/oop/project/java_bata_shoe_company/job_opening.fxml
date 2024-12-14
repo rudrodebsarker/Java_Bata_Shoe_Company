@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.JobOpeningController">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="914.0" style="-fx-background-color: #91CEEB;">
+         <children>
+            <Label layoutX="11.0" layoutY="6.0" prefHeight="20.0" prefWidth="108.0" text="Job Opening">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="5.0" prefHeight="22.0" prefWidth="22.0" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="889.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/pngegg%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="34.0" prefHeight="552.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Button layoutX="13.0" layoutY="119.0" mnemonicParsing="false" onAction="#creatInputInformationPdfAndpostJobOpeningOnButtonClick" prefHeight="26.0" prefWidth="156.0" text="Post job Openings" />
+            <Button layoutX="13.0" layoutY="171.0" mnemonicParsing="false" onAction="#closeJobOpeningOnButtonClick" prefHeight="26.0" prefWidth="156.0" text="Close Job Openings" />
+            <Button layoutX="13.0" layoutY="68.0" mnemonicParsing="false" onAction="#reviewInformationOnButtonClick" prefHeight="26.0" prefWidth="156.0" text="Review Information" />
+            <Button layoutX="13.0" layoutY="21.0" mnemonicParsing="false" onAction="#addInformationToFileOnButtonClick" prefHeight="26.0" prefWidth="156.0" text="Add to File" />
+         </children>
+      </AnchorPane>
+      <DatePicker fx:id="datePicker" layoutX="204.0" layoutY="79.0" />
+      <Label layoutX="204.0" layoutY="55.0" text="Enter Date : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="448.0" layoutY="55.0" prefHeight="18.0" prefWidth="80.0" text="Job Title : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enterJobTitleTextField" layoutX="448.0" layoutY="78.0" prefHeight="26.0" prefWidth="400.0" />
+      <Label layoutX="189.0" layoutY="140.0" prefHeight="19.0" prefWidth="142.0" text="Job Description :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="jobDescriptionTextArea" layoutX="189.0" layoutY="162.0" prefHeight="178.0" prefWidth="348.0" wrapText="true" />
+      <Label layoutX="552.0" layoutY="140.0" prefHeight="19.0" prefWidth="142.0" text="Requirements : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="jobRequarmentsTextArea" layoutX="552.0" layoutY="162.0" prefHeight="178.0" prefWidth="348.0" wrapText="true" />
+      <Label layoutX="189.0" layoutY="356.0" prefHeight="19.0" prefWidth="142.0" text="Review Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="reviewInformationTextArea" layoutX="189.0" layoutY="377.0" prefHeight="194.0" prefWidth="714.0" wrapText="true" />
+   </children>
+</AnchorPane>

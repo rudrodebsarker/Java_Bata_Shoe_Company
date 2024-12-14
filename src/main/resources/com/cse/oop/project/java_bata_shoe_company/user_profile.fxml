@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="440.0" prefWidth="832.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.UserProfileController">
+   <children>
+      <Label layoutX="58.0" layoutY="27.0" prefHeight="18.0" prefWidth="70.0" text="UserID :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="27.0" prefHeight="26.0" prefWidth="160.0" text="Password :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="117.0" prefHeight="18.0" prefWidth="70.0" text="Name : ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="117.0" prefHeight="26.0" prefWidth="160.0" text="Email : ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="201.0" prefHeight="18.0" prefWidth="70.0" text="Phone : ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="283.0" prefHeight="26.0" prefWidth="193.0" text="Date of Birth :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="262.0" prefHeight="26.0" prefWidth="160.0" text="Address : ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="187.0" prefHeight="26.0" prefWidth="160.0" text="Administrator :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="userIDlabel" layoutX="161.0" layoutY="27.0" prefHeight="26.0" prefWidth="215.0" />
+      <Label fx:id="nameLabel" layoutX="155.0" layoutY="117.0" prefHeight="26.0" prefWidth="215.0" />
+      <Label fx:id="phoneLabel" layoutX="155.0" layoutY="201.0" prefHeight="26.0" prefWidth="215.0" />
+      <Label fx:id="dobLabel" layoutX="191.0" layoutY="283.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label fx:id="passwordLabel" layoutX="563.0" layoutY="27.0" prefHeight="26.0" prefWidth="215.0" />
+      <Label fx:id="emailLabel" layoutX="563.0" layoutY="117.0" prefHeight="26.0" prefWidth="215.0" />
+      <Label fx:id="administratorLabel" layoutX="563.0" layoutY="187.0" prefHeight="26.0" prefWidth="215.0" />
+      <Label fx:id="addressLabel" layoutX="562.0" layoutY="227.0" prefHeight="152.0" prefWidth="248.0" wrapText="true" />
+   </children>
+</AnchorPane>

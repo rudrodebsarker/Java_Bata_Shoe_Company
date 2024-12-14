@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.LeaveRequestController">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="834.0" style="-fx-background-color: #91CEEB;">
+         <children>
+            <Label layoutX="11.0" layoutY="6.0" prefHeight="20.0" prefWidth="108.0" text="Leave Requests">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="5.0" prefHeight="22.0" prefWidth="22.0" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="809.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/pngegg%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="34.0" prefHeight="378.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Label layoutX="16.0" layoutY="14.0" prefHeight="26.0" prefWidth="150.0" text="Employee ID : ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="employeeIDTextField" layoutX="15.0" layoutY="41.0" />
+            <Button layoutX="94.0" layoutY="329.0" mnemonicParsing="false" onAction="#rejectLeaveRequestOnButtonClick" prefHeight="34.0" prefWidth="80.0" text="Reject">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="15.0" layoutY="82.0" prefHeight="26.0" prefWidth="150.0" text="Employee Name:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="employeeNameTextField" layoutX="15.0" layoutY="108.0" />
+            <Button layoutX="8.0" layoutY="329.0" mnemonicParsing="false" onAction="#approveLeaveRequestOnButtonClick" prefHeight="34.0" prefWidth="80.0" text="Approve">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="15.0" layoutY="147.0" prefHeight="26.0" prefWidth="150.0" text="Additional Comments :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="additionalCommentsTextField" layoutX="13.0" layoutY="173.0" prefHeight="123.0" prefWidth="162.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="182.0" layoutY="34.0" prefHeight="378.0" prefWidth="650.0">
+         <columns>
+            <TableColumn fx:id="employeeIDTableColumn" prefWidth="88.79997253417969" text="Employee ID" />
+            <TableColumn fx:id="employeeNameTableColumn" prefWidth="107.99993896484375" text="Employee name" />
+            <TableColumn fx:id="leaveDatesTableColumn" prefWidth="116.00006103515625" text="Leave Dates" />
+            <TableColumn fx:id="reasonForLeaveTableColumn" prefWidth="121.60003662109375" text="Reason for Leave" />
+            <TableColumn fx:id="additionalNotesTableColumn" prefWidth="114.4000244140625" text="Additional Notes" />
+            <TableColumn fx:id="attachmentsTableColumn" prefWidth="96.0" text="Attachments" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

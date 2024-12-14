@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.ManageEmployeesController">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="861.0" style="-fx-background-color: #91CEEB;">
+         <children>
+            <Label layoutX="11.0" layoutY="6.0" prefHeight="20.0" prefWidth="182.0" text="Manage employee ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="5.0" prefHeight="22.0" prefWidth="22.0" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="837.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/pngegg%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="34.0" prefHeight="378.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Button layoutX="9.0" layoutY="327.0" mnemonicParsing="false" onAction="#editEmployeeRecordsOnButtonClick" prefHeight="30.0" prefWidth="164.0" text="Edit Employee Records">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="276.0" mnemonicParsing="false" onAction="#loadEmployeeRecordsOnButtonClick" prefHeight="30.0" prefWidth="164.0" text="Load Employee Records">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="183.0" layoutY="34.0" prefHeight="378.0" prefWidth="678.0">
+         <columns>
+            <TableColumn fx:id="employeeIDTableColumn" prefWidth="88.79997253417969" text="Employee ID" />
+            <TableColumn fx:id="employeeINameTableColumn" prefWidth="121.5999755859375" text="Employee Name" />
+            <TableColumn fx:id="jobRolesTableColumn" prefWidth="128.00009155273438" text=" Job Roles" />
+            <TableColumn fx:id="contactDetailsTableColumn" prefWidth="160.80010986328125" text="Contact Details" />
+            <TableColumn fx:id="additionalInfoTableColumn" prefWidth="177.59991455078125" text="Additional Info." />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

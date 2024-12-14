@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.TrainingSessionController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="34.0" prefWidth="808.0" style="-fx-background-color: #91CEEB;">
+         <children>
+            <Label layoutX="11.0" layoutY="6.0" prefHeight="20.0" prefWidth="108.0" text="Training Session">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="5.0" prefHeight="22.0" prefWidth="22.0" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="783.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/pngegg%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="35.0" prefHeight="435.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Button layoutX="16.0" layoutY="331.0" mnemonicParsing="false" onAction="#createTrainingSessionOnButtonClick" prefHeight="34.0" prefWidth="150.0" text="Create Training Session" />
+            <Button layoutX="16.0" layoutY="386.0" mnemonicParsing="false" onAction="#deleteTrainingSessionOnButtonClick" prefHeight="34.0" prefWidth="150.0" text="Delete Training Session" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="198.0" layoutY="52.0" prefHeight="18.0" prefWidth="57.0" text="Topic :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="trainingTopicTextField" layoutX="198.0" layoutY="78.0" prefHeight="26.0" prefWidth="276.0" />
+      <TextField fx:id="trainerTextField" layoutX="501.0" layoutY="80.0" prefHeight="26.0" prefWidth="276.0" />
+      <Label layoutX="501.0" layoutY="54.0" prefHeight="18.0" prefWidth="57.0" text="Trainer :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="129.0" prefHeight="18.0" prefWidth="57.0" text="Date :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="selectDateDatePicker" layoutX="198.0" layoutY="148.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="selectTimeTextField" layoutX="501.0" layoutY="149.0" prefHeight="26.0" prefWidth="276.0" />
+      <Label layoutX="501.0" layoutY="123.0" prefHeight="18.0" prefWidth="57.0" text="Time : ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="201.0" prefHeight="19.0" prefWidth="116.0" text="Training Agenda :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="203.0" prefHeight="19.0" prefWidth="174.0" text="Training Objectives :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="trainingAgendaTextArea" layoutX="198.0" layoutY="222.0" prefHeight="234.0" prefWidth="276.0" />
+      <TextArea fx:id="trainingObjectivesTextArea" layoutX="501.0" layoutY="222.0" prefHeight="234.0" prefWidth="294.0" />
+   </children>
+</AnchorPane>

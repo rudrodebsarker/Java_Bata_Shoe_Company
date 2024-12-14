@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -12,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="465.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.AccessPromotionsController">
+<AnchorPane prefHeight="489.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.AccessPromotionsController">
    <children>
       <Pane layoutY="-3.0" prefHeight="34.0" prefWidth="808.0" style="-fx-background-color: #91CEEB;">
          <children>
@@ -22,31 +23,53 @@
                </font>
             </Label>
             <Label layoutX="723.0" layoutY="5.0" prefHeight="22.0" prefWidth="22.0" />
-            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="783.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="783.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../../../Downloads/pngegg%20(1).png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <AnchorPane layoutY="31.0" prefHeight="435.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
+      <AnchorPane layoutY="31.0" prefHeight="459.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
          <children>
-            <ComboBox fx:id="brandComboBox" layoutX="16.0" layoutY="29.0" prefWidth="150.0" promptText="Brand" />
+            <ComboBox fx:id="brandComboBox" layoutX="16.0" layoutY="14.0" prefWidth="150.0" promptText="Brand" />
+            <Label layoutX="16.0" layoutY="47.0" prefHeight="30.0" prefWidth="150.0" text="Model :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="modelTextField" layoutX="16.0" layoutY="77.0" />
+            <Label layoutX="13.0" layoutY="110.0" prefHeight="30.0" prefWidth="150.0" text="Discount Information :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="287.0" prefHeight="30.0" prefWidth="150.0" text="Validity Period :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="validityPeriodTextField" layoutX="14.0" layoutY="317.0" />
+            <TextArea fx:id="discountInfoTextArea" layoutX="13.0" layoutY="140.0" prefHeight="147.0" prefWidth="150.0" wrapText="true" />
+            <Button layoutX="8.0" layoutY="361.0" mnemonicParsing="false" onAction="#updatePromotionInfotoFileOnButtonClick" prefHeight="83.0" prefWidth="74.0" text="Update Promotion Info. to File" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="91.0" layoutY="361.0" mnemonicParsing="false" onAction="#loadPromotionInfofromFileOnButtonClick" prefHeight="83.0" prefWidth="74.0" text="Load Promotion Info. from File" textAlignment="CENTER" wrapText="true" />
          </children>
       </AnchorPane>
-      <TableView fx:id="tableView" layoutX="182.0" layoutY="122.0" prefHeight="344.0" prefWidth="626.0">
+      <TableView fx:id="tableView" layoutX="182.0" layoutY="122.0" prefHeight="367.0" prefWidth="626.0">
          <columns>
-            <TableColumn fx:id="discountInformationlTableColumn" prefWidth="160.79998779296875" text="Model" />
-            <TableColumn fx:id="customaeFeedbackTableColumn" prefWidth="276.0" text="Discount Information" />
-            <TableColumn fx:id="validityPeriodTableColumn" prefWidth="187.2000732421875" text="Validity Period" />
+            <TableColumn fx:id="modelTableColumn" prefWidth="155.20001220703125" text="Model" />
+            <TableColumn fx:id="discountInformationTableColumn" prefWidth="193.5999755859375" text="Discount Information" />
+            <TableColumn fx:id="validityPeriodTableColumn" minWidth="0.0" prefWidth="138.4000244140625" text="Validity Period" />
+            <TableColumn fx:id="brandTableColumn1" minWidth="0.0" prefWidth="136.0" text="Brand" />
          </columns>
       </TableView>
-      <TextField fx:id="searchBox" layoutX="205.0" layoutY="58.0" prefHeight="30.0" prefWidth="399.0" />
-      <Button layoutX="604.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchOnButtonClick" prefHeight="30.0" prefWidth="85.0" text="Search" textAlignment="CENTER">
+      <TextField fx:id="searchBox" layoutX="194.0" layoutY="58.0" prefHeight="30.0" prefWidth="293.0" />
+      <Button layoutX="488.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchOnButtonClick" prefHeight="30.0" prefWidth="85.0" text="Search" textAlignment="CENTER">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
       <Button layoutX="711.0" layoutY="58.0" mnemonicParsing="false" onAction="#handleLogoutOnClick" prefHeight="30.0" prefWidth="86.0" text="Logout" />
+      <Button layoutX="613.0" layoutY="58.0" mnemonicParsing="false" onAction="#switchToDashboardButtonOnClick" prefHeight="30.0" prefWidth="86.0" text="Home" />
    </children>
 </AnchorPane>
