@@ -42,6 +42,9 @@ public class MonitorSalesController {
     private ComboBox<String> nameOfBranchComboBox;
 
     @FXML
+    private ComboBox<String> nameItemComboBox;
+
+    @FXML
     private TableColumn<MonitorSales, String> quantityTableColumn;
 
     @FXML
@@ -64,9 +67,6 @@ public class MonitorSalesController {
     @FXML
     private TextArea showAllBranchWeeklySalesTextArea;
 
-    @FXML
-    private ComboBox<String> itemNameComboBox;
-
     private static final float DAILY_TARGET_VALUE = 145909; // Fixed daily target value
 
     @FXML
@@ -74,14 +74,14 @@ public class MonitorSalesController {
         try {
             // Retrieve values from UI
             String branch = nameOfBranchComboBox.getValue();
-            String item = itemNameComboBox.getValue();
+            String item = nameItemComboBox.getValue();
             float price = Float.parseFloat(itemPriceTextField.getText());
             int quantity = Integer.parseInt(quantityTextField.getText());
             LocalDate dateOfSale = dosDatePicker.getValue();
 
             // Validate input
-            if (dateOfSale == null) {
-                warningLabel.setText("Please select a valid date.");
+            if (branch == null || item == null || item.isEmpty() || quantity <= 0 || price <= 0 || dateOfSale == null) {
+                warningLabel.setText("Please fill all fields correctly.");
                 return;
             }
 
@@ -119,13 +119,11 @@ public class MonitorSalesController {
     @FXML
     void summarizeSalesButtonOnMouseClick(ActionEvent event) {
         try {
-
             LocalDate selectedDate = dosDatePicker.getValue();
             if (selectedDate == null) {
                 summarizeSalesTextArea.setText("Please select a valid date to summarize sales.");
                 return;
             }
-
 
             ArrayList<MonitorSales> salesForDate = (ArrayList<MonitorSales>) salesDataLists.stream()
                     .filter(sales -> sales.getDateOfSale().equals(selectedDate.toString()))
@@ -136,17 +134,17 @@ public class MonitorSalesController {
                     .map(sales -> Float.parseFloat(sales.getTotalSales()))
                     .reduce(0f, Float::sum);
 
-
             summarizeSalesTextArea.setText("Total Sales for " + selectedDate + ": " + totalSalesSum + " Taka");
 
-
-            if (totalSalesSum >= DAILY_TARGET_VALUE) {
+            // Check against the daily target
+            if (totalSalesSum >= 14400) {
                 dailyTargetMetLabel.setVisible(true);
                 dailyTargetNotMetLabel.setVisible(false);
             } else {
                 dailyTargetMetLabel.setVisible(false);
                 dailyTargetNotMetLabel.setVisible(true);
             }
+
         } catch (Exception e) {
             summarizeSalesTextArea.setText("An error occurred while summarizing sales.");
         }
@@ -164,15 +162,12 @@ public class MonitorSalesController {
 
     @FXML
     void initialize() {
-
         salesDataLists = new ArrayList<>();
 
-
-        itemNameComboBox.getItems().addAll("Boot", "Slipper", "Sandel");
+        nameItemComboBox.getItems().addAll("Boot", "Slipper", "Sandel");
         nameOfBranchComboBox.getItems().addAll("Store 1", "Store 2", "Store 3", "Store 4");
 
-
-        itemNameComboBox.setValue("Boot");
+        nameItemComboBox.setValue("Boot");
         nameOfBranchComboBox.setValue("Store 1");
 
         // Set up TableView columns

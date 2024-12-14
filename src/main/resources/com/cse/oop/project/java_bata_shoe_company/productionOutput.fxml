@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="535.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.ProductionOutputController">
+    <Label layoutX="50" layoutY="10" style="-fx-font-size: 18;" text="Production Output Dashboard" textAlignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0" />
+
+    <Label layoutX="50" layoutY="60" text="Shift 1:" AnchorPane.leftAnchor="50.0" />
+    <TextField fx:id="shift1Field" layoutX="200" layoutY="55" promptText="Enter production output" AnchorPane.leftAnchor="200.0" />
+
+    <Label layoutX="50" layoutY="100" text="Shift 2:" AnchorPane.leftAnchor="50.0" />
+    <TextField fx:id="shift2Field" layoutX="200" layoutY="95" promptText="Enter production output" AnchorPane.leftAnchor="200.0" />
+
+    <Label layoutX="50" layoutY="140" text="Shift 3:" AnchorPane.leftAnchor="50.0" />
+    <TextField fx:id="shift3Field" layoutX="200" layoutY="135" promptText="Enter production output" AnchorPane.leftAnchor="200.0" />
+
+    <Label layoutX="50" layoutY="180" text="Shift 4:" AnchorPane.leftAnchor="50.0" />
+    <TextField fx:id="shift4Field" layoutX="200" layoutY="175" promptText="Enter production output" AnchorPane.leftAnchor="200.0" />
+
+    <Button layoutX="150" layoutY="220" onAction="#handleSubmit" text="Submit Production Data" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="220.0" />
+
+    <Label fx:id="dailyOutputLabel" layoutX="50" layoutY="260" text="Total Daily Output: 0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+    <Label fx:id="targetFeedbackLabel" layoutX="50" layoutY="290" text="Daily Target Met: No" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+    <VBox fx:id="hourlyRatesVBox" layoutX="50" layoutY="320" spacing="5" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="320.0" />
+</AnchorPane>

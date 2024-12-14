@@ -10,7 +10,7 @@ public class MonitorSales {
     private String dateOfSale;
     private String dailyTarget;
 
-    // Constructor
+
     public MonitorSales(String branchName, String itemName, String itemPrice, String quantity, String totalSales, String dateOfSale, String dailyTarget) {
         this.branchName = branchName;
         this.itemName = itemName;

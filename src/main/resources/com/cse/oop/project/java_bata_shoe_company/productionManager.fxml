@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.cse.oop.project.java_bata_shoe_company.ProductionManager"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cse.oop.project.java_bata_shoe_company.ProductionManagerController">
+    <children>
+        <Label layoutX="50" layoutY="20" text="Production Manager Dashboard" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+        <Button fx:id="overseeDailyProduction" layoutX="50" layoutY="50" text="Oversee Daily Production" />
+        <Button fx:id="ensureQuality" layoutX="50" layoutY="100" text="Ensure Quality" />
+        <Button fx:id="monitorInventoryLevels" layoutX="50" layoutY="150" text="Monitor Inventory Levels" />
+        <Button fx:id="viewReports" layoutX="50" layoutY="200" text="View Reports" />
+    </children>
 </AnchorPane>
