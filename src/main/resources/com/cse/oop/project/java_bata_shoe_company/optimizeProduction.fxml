@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="473.0" prefWidth="563.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.cse.oop.project.java_bata_shoe_company.OptimizeProductionController">
+    <children>
+        <Label layoutX="20.0" layoutY="20.0" text="Daily Production Rates" />
+
+
+        <TextField fx:id="dailyProductionRateTextField" layoutX="160.0" layoutY="15.0" promptText="Enter production rate" />
+
+
+        <CheckBox fx:id="performanceIssueCheckBox" layoutX="20.0" layoutY="60.0" text="Performance Issue Detected" />
+
+
+        <Label layoutX="20.0" layoutY="100.0" text="Resource Use Per Batch" />
+        <TextField fx:id="resourceUseTextField" layoutX="160.0" layoutY="95.0" promptText="Enter resource use" />
+
+
+        <Button layoutX="20.0" layoutY="140.0" onAction="#calculateEfficiencyButton" text="Calculate Efficiency" />
+
+
+        <Label layoutX="160.0" layoutY="140.0" text="Efficiency:" />
+        <Label fx:id="efficiencyLabel" layoutX="220.0" layoutY="140.0" />
+
+
+        <Label layoutX="20.0" layoutY="180.0" text="Waste Generated" />
+        <TextField fx:id="wasteGeneratedTextField" layoutX="160.0" layoutY="175.0" promptText="Enter waste" />
+
+        <!-- Waste Target -->
+        <Label layoutX="20.0" layoutY="220.0" text="Target Waste" />
+        <TextField fx:id="targetWasteTextField" layoutX="160.0" layoutY="215.0" promptText="Enter target waste" />
+
+
+        <Button fx:id="calculateWasteButton" layoutX="20.0" layoutY="260.0" onAction="#calculateWasteEfficiency" text="Calculate Waste Efficiency" />
+
+
+        <Label layoutX="212.0" layoutY="268.0" text="Waste Efficiency:" />
+        <Label fx:id="wasteEfficiencyLabel" layoutX="220.0" layoutY="260.0" />
+
+
+        <Button fx:id="scheduleMaintenanceButton" layoutX="20.0" layoutY="300.0" onAction="#scheduleMaintenance" text="Schedule Maintenance" />
+
+
+        <Label layoutX="20.0" layoutY="340.0" text="Alerts:" />
+        <Label fx:id="alertsLabel" layoutX="80.0" layoutY="340.0" />
+    </children>
+</AnchorPane>
