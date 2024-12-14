@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.SaifAhammad.QueuedDeliveryController">
+    <Label fx:id="SupplierDashboard" alignment="TOP_CENTER" layoutX="5.0" layoutY="14.0" prefHeight="17.0" prefWidth="771.0" style="-fx-background-color: #7ff0ec;" text="Supplier Dashboard">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <Button fx:id="SupplierButton" layoutX="708.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowSupplierOnButtonClick" text="Supplier" />
+    <Button fx:id="SignOutButton" layoutX="708.0" layoutY="90.0" mnemonicParsing="false" onAction="#SignOutOnButtonClick" text="SignOut" />
+    <Button fx:id="ShipmentButton" layoutX="529.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowShipmentOnButtonClick" text="Shipment" />
+    <Button fx:id="WarehouseButton" layoutX="427.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowWarehouseOnButtonClick" text="Warehouse" />
+    <Button fx:id="TransportationTeamButton" layoutX="276.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowTransportationTeamOnButtonClick" text="Transportation Team" />
+    <Button fx:id="SubmitInvoicesButton" layoutX="149.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowSubmitInvoicesOnButtonClick" text="Submit Invoices" />
+    <Button fx:id="PurchaseOrdersButton" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onAction="#ShowPurchaseOrdersOnButtonClick" text="Purchase Orders" />
+    <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Performance Metrics" />
+   <RadioButton fx:id="QueuedRadio" layoutX="249.0" layoutY="209.0" mnemonicParsing="false" text="Queued Deliveries">
+      <toggleGroup>
+         <ToggleGroup fx:id="DeliveryGroup" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="CompletedRadio" layoutX="436.0" layoutY="209.0" mnemonicParsing="false" text="Completed Deliveries" toggleGroup="$DeliveryGroup" />
+   <BorderPane layoutX="30.0" layoutY="268.0" prefHeight="227.0" prefWidth="722.0" style="-fx-background-color: #8fadf7;">
+      <center>
+         <ListView fx:id="DeliveryList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      </center>
+   </BorderPane>
+   <Label layoutX="350.0" layoutY="243.0" text="Delivery Dashboard" />
+</AnchorPane>
