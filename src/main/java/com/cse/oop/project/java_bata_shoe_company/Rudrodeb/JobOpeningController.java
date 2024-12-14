@@ -1,7 +1,5 @@
 package com.cse.oop.project.java_bata_shoe_company.Rudrodeb;
 
-import com.cse.oop.project.java_bata_shoe_company.AppendableObjectOutputStream;
-import com.cse.oop.project.java_bata_shoe_company.JobOpening;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;

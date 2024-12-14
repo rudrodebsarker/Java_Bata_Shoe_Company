@@ -1,8 +1,6 @@
 package com.cse.oop.project.java_bata_shoe_company.Rudrodeb;
 
 import com.cse.oop.project.java_bata_shoe_company.HelloApplication;
-import com.cse.oop.project.java_bata_shoe_company.Signup;
-import com.cse.oop.project.java_bata_shoe_company.UserProfileController;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
@@ -14,8 +12,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 

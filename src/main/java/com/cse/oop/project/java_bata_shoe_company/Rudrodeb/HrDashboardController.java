@@ -1,7 +1,6 @@
 package com.cse.oop.project.java_bata_shoe_company.Rudrodeb;
 
 import com.cse.oop.project.java_bata_shoe_company.HelloApplication;
-import com.cse.oop.project.java_bata_shoe_company.UserProfileController;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;

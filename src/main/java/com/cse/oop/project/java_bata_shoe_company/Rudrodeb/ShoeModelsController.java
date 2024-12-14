@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -59,6 +60,15 @@ public class ShoeModelsController
         tg = new ToggleGroup();
         yesRadioButton.setToggleGroup(tg);
         noRadioButton.setToggleGroup(tg);
+
+
+        brandTableColumn.setCellValueFactory(new PropertyValueFactory<ShoeModel,String>("brand"));
+        moselTableColumn.setCellValueFactory(new PropertyValueFactory<ShoeModel,String>("shoe_model"));
+        productCodeTableColumn.setCellValueFactory(new PropertyValueFactory<ShoeModel,String>("code"));
+        availabilityTableColumn.setCellValueFactory(new PropertyValueFactory<ShoeModel,String>("availability"));
+        sizeTableColumn.setCellValueFactory(new PropertyValueFactory<ShoeModel,String>("size"));
+        priceTableColumn.setCellValueFactory(new PropertyValueFactory<ShoeModel,String>("price"));
+
 
 
 

@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.HandlePayrollController">
    <children>
       <Pane layoutX="1.0" layoutY="1.0" prefHeight="34.0" prefWidth="839.0" style="-fx-background-color: #91CEEB;">
@@ -38,7 +37,7 @@
                </font>
             </Button>
             <Button layoutX="16.0" layoutY="386.0" mnemonicParsing="false" onAction="#updateRecordsOnButtonClick" prefHeight="34.0" prefWidth="150.0" text="Update Records" />
-            <Button layoutX="91.0" layoutY="285.0" mnemonicParsing="false" onAction="#generatePayslipOnButtonClick" prefHeight="80.0" prefWidth="79.0" text="Generate Payslip" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="91.0" layoutY="285.0" mnemonicParsing="false" onAction="#generatePayslipOnButtonClick" prefHeight="80.0" prefWidth="79.0" text="Generate Payslip (pdf)" textAlignment="CENTER" wrapText="true" />
          </children>
       </AnchorPane>
       <Label layoutX="197.0" layoutY="52.0" prefHeight="18.0" prefWidth="150.0" text="Employee Id :">
@@ -51,12 +50,12 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="197.0" layoutY="124.0" prefHeight="18.0" prefWidth="150.0" text="Bonuses : ">
+      <Label layoutX="197.0" layoutY="124.0" prefHeight="18.0" prefWidth="150.0" text="Bonuses(%) : ">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="551.0" layoutY="124.0" prefHeight="18.0" prefWidth="150.0" text="Deductions :">
+      <Label layoutX="551.0" layoutY="124.0" prefHeight="18.0" prefWidth="150.0" text="Deductions(%) :">
          <font>
             <Font size="13.0" />
          </font>

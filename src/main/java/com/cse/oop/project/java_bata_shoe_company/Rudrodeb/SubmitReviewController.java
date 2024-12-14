@@ -1,8 +1,6 @@
 package com.cse.oop.project.java_bata_shoe_company.Rudrodeb;
 
-import com.cse.oop.project.java_bata_shoe_company.AppendableObjectOutputStream;
 import com.cse.oop.project.java_bata_shoe_company.HelloApplication;
-import com.cse.oop.project.java_bata_shoe_company.Signup;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;

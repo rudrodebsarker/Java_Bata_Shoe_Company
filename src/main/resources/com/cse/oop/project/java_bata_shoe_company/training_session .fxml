@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.TrainingSessionController">
+<AnchorPane prefHeight="572.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse.oop.project.java_bata_shoe_company.Rudrodeb.TrainingSessionController">
    <children>
       <Pane layoutX="1.0" prefHeight="34.0" prefWidth="808.0" style="-fx-background-color: #91CEEB;">
          <children>
@@ -29,47 +28,53 @@
             </ImageView>
          </children>
       </Pane>
-      <AnchorPane layoutY="35.0" prefHeight="435.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
+      <AnchorPane layoutY="35.0" prefHeight="536.0" prefWidth="182.0" style="-fx-background-color: #6495ED;">
          <children>
-            <Button layoutX="16.0" layoutY="331.0" mnemonicParsing="false" onAction="#createTrainingSessionOnButtonClick" prefHeight="34.0" prefWidth="150.0" text="Create Training Session" />
-            <Button layoutX="16.0" layoutY="386.0" mnemonicParsing="false" onAction="#deleteTrainingSessionOnButtonClick" prefHeight="34.0" prefWidth="150.0" text="Delete Training Session" />
+            <Button layoutX="16.0" layoutY="387.0" mnemonicParsing="false" onAction="#createTrainingSessionOnButtonClick" prefHeight="34.0" prefWidth="150.0" text="Create Training Session" />
+            <Button layoutX="16.0" layoutY="442.0" mnemonicParsing="false" onAction="#loadTrainingSessionOnButtonClick" prefHeight="34.0" prefWidth="150.0" text="Load Training Session" />
          </children>
       </AnchorPane>
-      <Label layoutX="198.0" layoutY="52.0" prefHeight="18.0" prefWidth="57.0" text="Topic :">
+      <Label layoutX="198.0" layoutY="47.0" prefHeight="18.0" prefWidth="57.0" text="Topic :">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="trainingTopicTextField" layoutX="198.0" layoutY="78.0" prefHeight="26.0" prefWidth="276.0" />
-      <TextField fx:id="trainerTextField" layoutX="501.0" layoutY="80.0" prefHeight="26.0" prefWidth="276.0" />
-      <Label layoutX="501.0" layoutY="54.0" prefHeight="18.0" prefWidth="57.0" text="Trainer :">
+      <TextField fx:id="trainingTopicTextField" layoutX="198.0" layoutY="73.0" prefHeight="26.0" prefWidth="276.0" />
+      <TextField fx:id="trainerTextField" layoutX="501.0" layoutY="73.0" prefHeight="26.0" prefWidth="276.0" />
+      <Label layoutX="501.0" layoutY="47.0" prefHeight="18.0" prefWidth="57.0" text="Trainer :">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="198.0" layoutY="129.0" prefHeight="18.0" prefWidth="57.0" text="Date :">
+      <Label layoutX="198.0" layoutY="110.0" prefHeight="18.0" prefWidth="57.0" text="Date :">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <DatePicker fx:id="selectDateDatePicker" layoutX="198.0" layoutY="148.0" prefHeight="26.0" prefWidth="174.0" />
-      <TextField fx:id="selectTimeTextField" layoutX="501.0" layoutY="149.0" prefHeight="26.0" prefWidth="276.0" />
-      <Label layoutX="501.0" layoutY="123.0" prefHeight="18.0" prefWidth="57.0" text="Time : ">
+      <DatePicker fx:id="selectDateDatePicker" layoutX="198.0" layoutY="129.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="selectTimeTextField" layoutX="501.0" layoutY="142.0" prefHeight="26.0" prefWidth="276.0" />
+      <Label layoutX="501.0" layoutY="116.0" prefHeight="18.0" prefWidth="57.0" text="Time : ">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="198.0" layoutY="201.0" prefHeight="19.0" prefWidth="116.0" text="Training Agenda :">
+      <Label layoutX="198.0" layoutY="175.0" prefHeight="19.0" prefWidth="116.0" text="Training Agenda :">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="501.0" layoutY="203.0" prefHeight="19.0" prefWidth="174.0" text="Training Objectives :">
+      <Label layoutX="501.0" layoutY="184.0" prefHeight="19.0" prefWidth="174.0" text="Training Objectives :">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextArea fx:id="trainingAgendaTextArea" layoutX="198.0" layoutY="222.0" prefHeight="234.0" prefWidth="276.0" />
-      <TextArea fx:id="trainingObjectivesTextArea" layoutX="501.0" layoutY="222.0" prefHeight="234.0" prefWidth="294.0" />
+      <TextArea fx:id="trainingAgendaTextArea" layoutX="198.0" layoutY="196.0" prefHeight="160.0" prefWidth="276.0" wrapText="true" />
+      <TextArea fx:id="trainingObjectivesTextArea" layoutX="501.0" layoutY="204.0" prefHeight="150.0" prefWidth="294.0" wrapText="true" />
+      <Label layoutX="198.0" layoutY="370.0" prefHeight="19.0" prefWidth="193.0" text="Show Created Training Session :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="showCreatedTrainingSessionTextArea1" layoutX="198.0" layoutY="390.0" prefHeight="160.0" prefWidth="594.0" wrapText="true" />
    </children>
 </AnchorPane>
